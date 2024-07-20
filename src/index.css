@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #090f1e;
+}
+@font-face {
+  font-family: "FSElliotProBold";
+  src: url(../public/fonts/FSElliotPro-Bold.woff2);
+}
+@font-face {
+  font-family: "FSElliotPro";
+  src: url(../public/fonts/FSElliotPro.woff2);
+}
+@font-face {
+  font-family: "HalvarBreitBd";
+  src: url(../public/fonts/HalvarBreit-Bd.woff2);
+}
+@font-face {
+  font-family: "HalvarBreitBlkSuSlanted";
+  src: url(../public/fonts/HalvarBreit-BlkSuSlanted.woff2);
+}
+@keyframes a0_t_c_1_r {
+  0% {
+    transform: translate(28px, 28px) scale(0, 0) translate(-28px, -28px);
+    animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
+  }
+  to {
+    transform: translate(28px, 28px) scale(1, 1) translate(-28px, -28px);
+  }
+}
+@keyframes a1_o_c_1_r {
+  0% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.g_1 {
+  animation: 0.25s linear both a0_t_c_1_r;
+}
+.g_2 {
+  animation: 0.25s linear both a1_o_c_1_r;
+}
+.mine_wrap {
+  background-image: url(/public/images/border.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  position: relative;
+}
+.wrap_full_game {
+  position: relative;
+}
+.wrap_full_game::after {
+  background-image: url(/public/images/particles.e53a48ca4d5fff68142d.svg);
+  background-size: 89px 69px;
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 150px;
+  z-index: 30;
+
+  left: -22px;
+  top: -22px;
+  -webkit-transform: rotate(-54deg);
+  transform: rotate(-54deg);
+}
+.wrap_full_game::before {
+  background-image: url(/public/images/particles.e53a48ca4d5fff68142d.svg);
+  background-size: 89px 69px;
+  content: "";
+  height: 69px;
+  position: absolute;
+  width: 89px;
+  z-index: 20;
+
+  left: 275px;
+  top: 310px;
+  transform: scaleY(-1);
+}
+
+/* minefildActive */
+.glow_line {
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  -webkit-box-shadow: inset 0px 162px 40px -154px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 0px 162px 40px -154px rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 162px 40px -154px rgba(255, 255, 255, 1);
+  transform: rotate(-45deg) translatex(0px) translateY(-200px);
+  z-index: 30;
+  top: 0;
+  left: 0;
+}
+.glow_line_animated {
+  animation: glow_line 1s forwards;
+}
+@keyframes glow_line {
+  0% {
+    transform: rotate(-45deg) translatex(0px) translateY(-200px);
+  }
+  100% {
+    transform: rotate(-45deg) translatex(0px) translateY(470px);
+  }
+}
+.svg_block {
+  transition: all;
+  opacity: 1;
+}
+.svg_2 {
+  opacity: 0;
+  animation: mine 1.5s forwards;
+  animation-delay: 1.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+@keyframes mine {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.18);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.active_tab {
+  background: linear-gradient(#151b2e 0 0) padding-box,
+    linear-gradient(90deg, #0095ff, #0855c4) border-box;
+  border: 2px solid transparent;
+}
+/* left 30 */
