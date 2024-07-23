@@ -111,7 +111,7 @@ html {
   transition: all;
   opacity: 1;
 }
-.svg_2 {
+.block_step1 {
   opacity: 0;
   animation: mine 1.5s forwards;
   animation-delay: 1.5s;
@@ -140,9 +140,91 @@ html {
     opacity: 0;
   }
 }
+.blocks_step1 {
+  animation: blocksStep1 2s ease forwards;
+  animation-delay: 2s;
+}
+@keyframes blocksStep1 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  35% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
 .active_tab {
   background: linear-gradient(#151b2e 0 0) padding-box,
     linear-gradient(90deg, #0095ff, #0855c4) border-box;
   border: 2px solid transparent;
 }
+
+/* elements */
+.cross {
+  transform: scale(0) rotate(360deg);
+}
+.crossVisible {
+  animation: crossDet 1s ease forwards;
+  animation-delay: 3.5s;
+}
+.crossHidden {
+  transform: scale(0) rotate(360deg);
+}
+.crossDet {
+  animation: crossDet 1s ease forwards;
+  animation-delay: 2.8s;
+}
+@keyframes crossDet {
+  0% {
+    transform: scale(0) rotate(360deg);
+  }
+  75% {
+    transform: scale(1.15) rotate(0);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+
+
+
+
+.star {
+  transform: scale(0) rotate(360deg);
+}
+.starVisible {
+  animation: starsDet 1s ease forwards;
+  animation-delay: 3.5s;
+}
+.starHidden {
+  transform: scale(0) rotate(360deg);
+}
+@keyframes starsDet {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 /* left 30 */
+/* @keyframes a0_t_cr_i{0%{transform:translate(28px,28px) rotate(180deg);animation-timing-function:cubic-bezier(0,0,.58,1)}71.4285%{transform:translate(28px,28px) rotate(-5deg)}to{transform:translate(28px,28px) rotate(0deg)}}@keyframes krest_t_cr_i{0%{transform:scale(0,0) translate(-28px,-28px)}42.8571%,to{transform:scale(1,1) translate(-28px,-28px)}71.4285%{transform:scale(1.15,1.15) translate(-28px,-28px);animation-timing-function:cubic-bezier(0,0,.58,1)}}@keyframes a1_t_cr_i{0%{transform:translate(17.3511px,39px) rotate(0deg) scale(.438128,.423532) translate(-14.3863px,-37.0446px)}to{transform:translate(14.3863px,37.0446px) rotate(0deg) scale(1,1) translate(-14.3863px,-37.0446px)}}@keyframes a2_t_cr_i{0%{transform:translate(15.8726px,16.8036px) rotate(0deg) scale(.440469,.440469) translate(-19.2722px,-19.7496px)}to{transform:translate(19.2722px,19.7496px) rotate(0deg) scale(1,1) translate(-19.2722px,-19.7496px)}}@keyframes a3_t_cr_i{0%{transform:translate(37px,18.2131px) rotate(0deg) scale(.461347,.461347) translate(-40.0446px,-20.5702px)}to{transform:translate(40.0446px,20.5702px) rotate(0deg) scale(1,1) translate(-40.0446px,-20.5702px)}}@keyframes a4_t_cr_i{0%{transform:translate(29.3877px,32.5041px) rotate(-45.565409deg) scale(.403058,.403058) translate(-31.3472px,-29.0394px)}to{transform:translate(31.3472px,29.0394px) rotate(0deg) scale(1,1) translate(-31.3472px,-29.0394px)}}@keyframes a5_t_cr_i{0%{transform:translate(27.9335px,28.2933px) rotate(0deg) scale(1.122601,1.122601) translate(-27.9335px,-28.2933px)}28.5714%{transform:translate(27.9335px,28.2933px) rotate(-4.682578deg) scale(1.087572,1.087572) translate(-27.9335px,-28.2933px)}71.4285%{transform:translate(27.9335px,28.2933px) rotate(0deg) scale(1.035029,1.035029) translate(-27.9335px,-28.2933px)}to{transform:translate(27.9335px,28.2933px) rotate(0deg) scale(1,1) translate(-27.9335px,-28.2933px)}} */

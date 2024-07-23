@@ -22,7 +22,7 @@ const Sapper = () => {
   const [activeTab, setActiveTab] = useState("live");
 
   const handleStartGame = () => {
-    setIsActive(true);
+    setIsActive(!isActive);
   };
   const handleAddTraps = () => {
     if (traps > 7) {
