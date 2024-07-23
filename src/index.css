@@ -22,6 +22,10 @@ html {
   font-family: "HalvarBreitBlkSuSlanted";
   src: url(../public/fonts/HalvarBreit-BlkSuSlanted.woff2);
 }
+@font-face {
+  font-family: "HalvarBreitTh";
+  src: url(../public/fonts/HalvarBreit-Th.woff2);
+}
 @keyframes a0_t_c_1_r {
   0% {
     transform: translate(28px, 28px) scale(0, 0) translate(-28px, -28px);

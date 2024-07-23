@@ -39,7 +39,8 @@ const MineField = ({ isActive }) => {
         <Star size={54} className={`star ${isActive ?'starVisible starHidden' : 'starHidden'} `}/>
         <Star size={54} className={`star ${isActive ?'starVisible starHidden' : 'starHidden'} `}/>
         <Star size={54} className={`star ${isActive ?'starVisible starHidden' : 'starHidden'} `}/>
-        <img src={Cross} className= {`cross ${isActive ? 'crossDet' : null}`}/>
+        {/* <img src={Cross} className= {`cross ${isActive ? 'crossDet' : null}`}/> */}
+        <img src={Cross} className={`${isActive ? 'crossVisible crossHidden' : 'crossHidden'}`}/>
         <Star size={54} className={`star ${isActive ?'starVisible starHidden' : 'starHidden'} `}/>
         </div>
       </div>

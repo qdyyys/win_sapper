@@ -8,6 +8,7 @@ export default {
         FSElliotProBold: ["FSElliotProBold", "sans"],
         HalvarBreitBd: ["HalvarBreitBd", "sans"],
         HalvarBreitBlk: ["HalvarBreitBlkSuSlanted", "sans"],
+        HalvarBreitTh: ["HalvarBreitTh", "sans"]
       },
     },
   },
