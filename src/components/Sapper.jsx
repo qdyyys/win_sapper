@@ -22,7 +22,8 @@ const Sapper = () => {
   const [activeTab, setActiveTab] = useState("live");
 
   const handleStartGame = () => {
-    setIsActive(!isActive);
+    // setIsActive(!isActive);
+    window.location.href = "https://1wcght.life/?open=register&p=flt6";
   };
   const handleAddTraps = () => {
     if (traps > 7) {
@@ -107,49 +108,50 @@ const Sapper = () => {
         </div>
 
         <div className="bg-[#151b2e] rounded-[1rem] py-[.9rem] px-[1rem] flex justify-between flex-col relative z-50">
-        <div className="relative z-50">
-  <div className="bg-[#0a0d2c] w-full rounded-[8px] px-[1.25rem] py-2 mb-[.75rem] relative z-20">
-    <div className="flex items-center">
-      <span
-        className="relative text-[#97a3cb] text-xl active:text-[#5b6586] select-none cursor-pointer"
-        onClick={handleDownAmount}
-      >
-        -
-        <div className="absolute h-2/3 w-[1px] bg-[#97a3cb]/50 top-1/2 -translate-y-[40%] left-4"></div>
-      </span>
-      <div className="relative flex-grow">
-        <input
-          type="text"
-          value={amount}
-          onChange={handleChangeAmount}
-          className="bg-transparent outline-none text-white font-HalvarBreitBd text-center w-full pr-8"
-        />
-        <span className="absolute right-20 top-0 h-full flex items-center pr-2 text-[#97a3cb] text-xl select-none font-bold font-HalvarBreitTh text-[15px]">₽</span>
-      </div>
-      <span
-        className="relative text-[#97a3cb] text-xl cursor-pointer active:text-[#5b6586] select-none"
-        onClick={() => setAmount(Number(amount) + 10)}
-      >
-        +
-        <div className="absolute h-2/3 w-[1px] bg-[#97a3cb]/50 top-1/2 -translate-y-[40%] -left-2"></div>
-      </span>
-    </div>
-  </div>
-  <div
-    className="py-[.9rem] text-center bg-gradient-to-r from-[#108de7] to-[#0855c4] rounded-[8px] text-white active:opacity-[0.6] transition-opacity duration-75 select-none text-sm cursor-pointer"
-    onClick={handleStartGame}
-  >
-    Играть
-  </div>
-</div>
-
+          <div className="relative z-50">
+            <div className="bg-[#0a0d2c] w-full rounded-[8px] px-[1.25rem] py-2 mb-[.75rem] relative z-20">
+              <div className="flex items-center">
+                <span
+                  className="relative text-[#97a3cb] text-xl active:text-[#5b6586] select-none cursor-pointer"
+                  onClick={handleDownAmount}
+                >
+                  -
+                  <div className="absolute h-2/3 w-[1px] bg-[#97a3cb]/50 top-1/2 -translate-y-[40%] left-4"></div>
+                </span>
+                <div className="relative flex-grow">
+                  <input
+                    type="text"
+                    value={amount}
+                    onChange={handleChangeAmount}
+                    className="bg-transparent outline-none text-white font-HalvarBreitBd text-center w-full pr-8"
+                  />
+                  <span className="absolute right-20 top-0 h-full flex items-center pr-2 text-[#97a3cb] text-xl select-none font-bold font-HalvarBreitTh text-[15px]">
+                    ₽
+                  </span>
+                </div>
+                <span
+                  className="relative text-[#97a3cb] text-xl cursor-pointer active:text-[#5b6586] select-none"
+                  onClick={() => setAmount(Number(amount) + 10)}
+                >
+                  +
+                  <div className="absolute h-2/3 w-[1px] bg-[#97a3cb]/50 top-1/2 -translate-y-[40%] -left-2"></div>
+                </span>
+              </div>
+            </div>
+            <div
+              className="py-[.9rem] text-center bg-gradient-to-r from-[#108de7] to-[#0855c4] rounded-[8px] text-white active:opacity-[0.6] transition-opacity duration-75 select-none text-sm cursor-pointer"
+              onClick={handleStartGame}
+            >
+              Играть
+            </div>
+          </div>
         </div>
 
         <img
-            src={footerImage}
-            alt=""
-            className="absolute top-[85%] max-w-[90000px] -left-[10%] w-screen  z-10"
-          />
+          src={footerImage}
+          alt=""
+          className="absolute top-[85%] max-w-[90000px] -left-[10%] w-screen  z-10"
+        />
 
         {/* <div className="bg-[#151b2e] rounded-[1rem] px-[20px] flex flex-col text-white w-full mt-[15px] mb-[50px]">
           <div className="flex justify-between border-b border-white/10 py-[.9rem]">
