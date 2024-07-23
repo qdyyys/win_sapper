@@ -81,7 +81,7 @@ const Sapper = () => {
                 Макс выигрыш
               </p>
               <p className="text-[.875rem] font-FSElliotProBold text-white">
-                {formattedMaxWin} <span className="text-[#858cab]">$</span>
+                {formattedMaxWin} <span className="text-[#858cab]">₽</span>
               </p>
             </span>
           </div>
@@ -124,7 +124,7 @@ const Sapper = () => {
           onChange={handleChangeAmount}
           className="bg-transparent outline-none text-white font-HalvarBreitBd text-center w-full pr-8"
         />
-        <span className="absolute right-20 top-0 h-full flex items-center pr-2 text-[#97a3cb] text-xl select-none font-bold font-HalvarBreitTh text-[15px]">$</span>
+        <span className="absolute right-20 top-0 h-full flex items-center pr-2 text-[#97a3cb] text-xl select-none font-bold font-HalvarBreitTh text-[15px]">₽</span>
       </div>
       <span
         className="relative text-[#97a3cb] text-xl cursor-pointer active:text-[#5b6586] select-none"
