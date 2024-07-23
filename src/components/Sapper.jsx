@@ -12,6 +12,7 @@ import Live from "./Live";
 import My from "./My";
 
 const Sapper = () => {
+  const URL_REF = "https://1wcght.life/?open=register&p=flt6";
   const [sound, setSound] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [amount, setAmount] = useState(0);
@@ -22,8 +23,8 @@ const Sapper = () => {
   const [activeTab, setActiveTab] = useState("live");
 
   const handleStartGame = () => {
-    // setIsActive(!isActive);
-    window.location.href = "https://1wcght.life/?open=register&p=flt6";
+    setIsActive(!isActive);
+    // window.location.href = URL_REF;
   };
   const handleAddTraps = () => {
     if (traps > 7) {
