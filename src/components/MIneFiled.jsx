@@ -13,7 +13,7 @@ const MineField = ({ isActive }) => {
 
   return (
     <div className="bg-[#0a0f1d] mt-[15px] mb-[20px] relative overflow-hidden max-w-[350px] mx-auto ">
-      <div className="p-[15px] mine_wrap gap-3 max-w-[350px] mx-auto grid justify-center items-center grid-cols-5 overflow-hidden relative">
+      <div className="p-[15px] mine_wrap gap-3 max-w-[350px] mx-auto grid justify-center items-center grid-cols-5 overflow-hidden relative rounded-[20px]">
         {mines}
         <div className="absolute w-full left-0 h-full p-[15px] gap-3 max-w-[350px] grid justify-center items-center grid-cols-5">
         <Star size={54} className={`star ${isActive ?'starVisible starHidden' : 'starHidden'} `}/>
@@ -43,10 +43,10 @@ const MineField = ({ isActive }) => {
         <img src={Cross} className={`${isActive ? 'crossVisible crossHidden' : 'crossHidden'}`}/>
         <Star size={54} className={`star ${isActive ?'starVisible starHidden' : 'starHidden'} `}/>
         </div>
-      </div>
-      <div
+        <div
         className={`glow_line ${isActive ? "glow_line_animated" : ""}`}
       ></div>
+      </div>
       <div className="elements absolute"></div>
     </div>
   );
