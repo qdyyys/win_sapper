@@ -145,24 +145,12 @@ html {
   }
 }
 .blocks_step1 {
-  animation: blocksStep1 1.5s ease forwards;
+  animation: blocksStep1 0.5s ease forwards;
   animation-delay: 1s;
 }
 @keyframes blocksStep1 {
   0% {
     transform: scale(1);
-    opacity: 1;
-  }
-  25% {
-    transform: scale(0.9);
-    opacity: 1;
-  }
-  35% {
-    transform: scale(0.9);
-    opacity: 1;
-  }
-  75% {
-    transform: scale(0.9);
     opacity: 1;
   }
   100% {
@@ -182,7 +170,7 @@ html {
 }
 .crossVisible {
   animation: crossDet 1s ease forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1.2s;
 }
 .crossHidden {
   transform: scale(0) rotate(360deg);
@@ -208,7 +196,7 @@ html {
 }
 .starVisible {
   animation: starsDet 1s ease forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1.2s;
 }
 .starHidden {
   transform: scale(0) rotate(360deg);
