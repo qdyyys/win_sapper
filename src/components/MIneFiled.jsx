@@ -7,7 +7,7 @@ const MineField = ({ isActive }) => {
   const mines = Array.from({ length: 25 }, (_, index) => (
     <Mine
       key={index}
-      className={index === 23 && isActive ? "block_step1" : isActive ? 'blocks_step1' : "svg_block"}
+      className={index === 99 && isActive ? "block_step1" : isActive ? 'blocks_step1' : "svg_block"}
     />
   ));
 
